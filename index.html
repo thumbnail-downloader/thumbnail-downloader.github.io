@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Скачать превью видео с Ютуба по ссылке - все размеры обложки YouTube | HD 1280×720</title>
+		<meta name="description" content="Скачайте обложку (превью, миниатюру) видео с YouTube по ссылке: HD 1280×720, SD, HQ, WebP и кадры из ролика. Бесплатно, без регистрации, история только в вашем браузере." />
+		<meta name="robots" content="index,follow,max-image-preview:large" />
+		<link rel="canonical" href="https://thumbnail-downloader.github.io/" />
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="favicon.svg" />
+		<meta name="theme-color" content="#e62117" />
+		<meta name="author" content="YT Preview" />
+		<link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="ru_RU" />
+		<meta property="og:site_name" content="YT Preview" />
+		<meta property="og:title" content="Скачать превью видео с Ютуба по ссылке - все размеры обложки YouTube" />
+		<meta property="og:description" content="Скачайте обложку (превью, миниатюру) видео с YouTube по ссылке: HD 1280×720, SD, HQ, WebP и кадры из ролика. Бесплатно, без регистрации, история только в вашем браузере." />
+		<meta property="og:url" content="https://thumbnail-downloader.github.io/" />
+		<meta property="og:image" content="https://thumbnail-downloader.github.io/favicon.svg" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Скачать превью видео с Ютуба по ссылке" />
+		<meta name="twitter:description" content="Скачайте обложку (превью, миниатюру) видео с YouTube по ссылке: HD 1280×720, SD, HQ, WebP и кадры из ролика. Бесплатно, без регистрации, история только в вашем браузере." />
+		<link rel="stylesheet" href="style.css" />
+		<script type="application/ld+json">
+			{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"YT Preview — скачать обложку видео YouTube","url":"https://thumbnail-downloader.github.io/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","inLanguage":"ru","dateModified":"2026-11-10","author":{"@type":"Person","name":"thumbnail-downloader.github.io"},"offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"}},{"@type":"HowTo","name":"Как скачать обложку видео с YouTube","step":[{"@type":"HowToStep","text":"Скопируйте ссылку на видео"},{"@type":"HowToStep","text":"Вставьте её в поле и нажмите «Получить обложки»"},{"@type":"HowToStep","text":"Выберите размер и формат и нажмите «Скачать»"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Как скачать превью видео с YouTube в максимальном качестве?","acceptedAnswer":{"@type":"Answer","text":"Вставьте ссылку и выберите вариант 1280×720 (maxresdefault). Если такого размера нет, у видео доступны HQ 480×360 и SD 640×480."}},{"@type":"Question","name":"Это бесплатно и нужна ли регистрация?","acceptedAnswer":{"@type":"Answer","text":"Да, бесплатно и без регистрации."}},{"@type":"Question","name":"Что делать, если YouTube заблокирован?","acceptedAnswer":{"@type":"Answer","text":"Кнопки скачивания показываются всегда. Если картинка не загрузилась, нажмите «Скачать» или скопируйте прямую ссылку."}},{"@type":"Question","name":"Можно ли использовать чужую обложку?","acceptedAnswer":{"@type":"Answer","text":"Обложка защищена авторским правом автора канала. Для публикации нужно его разрешение."}}]}]}
+		</script>
+		<meta name="yandex-verification" content="b35285728a7a13b3" />
+	</head>
+	<body>
+		<header>
+			<div class="w">
+				<p class="l"><img src="favicon.svg" width="28" height="28" alt="Логотип YT Preview" /> YT Preview</p>
+			</div>
+		</header>
+		<main>
+			<div class="hero">
+				<div class="w">
+					<h1>Загрузчик обложек видео с YouTube онлайн</h1>
+					<p>Вставьте ссылку на ролик и сохраните обложку видео с ютуба (превью, thumbnail) в нужном размере: HD 1280×720, 640×480, WebP, а также кадры из самого видео. Бесплатно, без регистрации и установки программ.</p>
+					<form id="f"><input id="u" type="text" inputmode="url" placeholder="https://www.youtube.com/watch?v=..." aria-label="Ссылка на видео YouTube" required /><button>Получить обложки</button></form>
+					<div id="err" role="alert"></div>
+				</div>
+			</div>
+			<div class="w">
+				<div id="res" aria-live="polite"></div>
+				<section id="hist" hidden>
+					<h2>История ваших обложек</h2>
+					<p>Здесь последние ролики, для которых вы открывали обложки. Список лежит только в памяти вашего браузера (localStorage): его видите только вы, никто другой, включая нас, доступа к нему не имеет.</p>
+					<div id="hl"></div>
+					<button id="hc" type="button" class="btn s">Очистить историю</button>
+				</section>
+				<section>
+					<h2>Как скачать превью видео с ютуба за 3 шага</h2>
+					<ol>
+						<li>Скопируйте ссылку на ролик, Shorts или трансляцию (в приложении — «Поделиться» → «Копировать»).</li>
+						<li>Вставьте её в поле выше и нажмите «Получить обложки».</li>
+						<li>Выберите нужное разрешение и формат, нажмите «Скачать» — файл сохранится на устройство.</li>
+					</ol>
+					<p>Принимаются ссылки вида youtube.com/watch, youtu.be, youtube.com/shorts, /embed, /live, а также просто 11-символьный ID видео.</p>
+				</section>
+				<section>
+					<h2>Все размеры обложек YouTube</h2>
+					<div class="sc">
+						<table>
+							<tr>
+								<th>Название</th>
+								<th>Размер</th>
+								<th>Когда использовать</th>
+							</tr>
+							<tr>
+								<td>maxresdefault</td>
+								<td>1280×720</td>
+								<td>Лучшее качество: для монтажа, постов, презентаций</td>
+							</tr>
+							<tr>
+								<td>sddefault</td>
+								<td>640×480</td>
+								<td>Блоги, статьи</td>
+							</tr>
+							<tr>
+								<td>hqdefault</td>
+								<td>480×360</td>
+								<td>Карточки и превью в соцсетях</td>
+							</tr>
+							<tr>
+								<td>mqdefault</td>
+								<td>320×180</td>
+								<td>Мини-превью 16:9</td>
+							</tr>
+							<tr>
+								<td>default</td>
+								<td>120×90</td>
+								<td>Иконка в списках</td>
+							</tr>
+							<tr>
+								<td>hq1–hq3, 1–3</td>
+								<td>480×360 / 120×90</td>
+								<td>Автокадры из видео (начало, середина, конец)</td>
+							</tr>
+						</table>
+					</div>
+					<p>Формат WebP легче JPG при том же качестве, поэтому подходит для сайтов. JPG совместим со всеми программами.</p>
+				</section>
+				<section>
+					<h2>Почему именно наш сервис</h2>
+					<ul>
+						<li><b>Все варианты сразу:</b> 15 файлов на выбор, а не одна картинка.</li>
+						<li><b>Проверка реального размера:</b> показываем, какое разрешение у обложки на самом деле, и помечаем отсутствующие.</li>
+						<li><b>Работает при блокировке YouTube:</b> кнопки скачивания и прямые ссылки доступны, даже если картинка не отображается.</li>
+						<li><b>Быстро и приватно:</b> нет серверной части, ссылка обрабатывается в вашем браузере.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Для чего сохраняют превью видео</h2>
+					<p>
+						Причины обычно самые житейские: собрать подборку роликов для поста, добавить картинку в обзор или статью, разобрать удачную миниатюру конкурента, вернуть свою обложку, когда исходник пропал вместе со старым
+						ноутбуком. Иногда нужен просто красивый кадр, и автокадры, которые YouTube делает сам, подходят как раз для этого.
+					</p>
+					<p>
+						Если вы искали, как сохранить миниатюру ролика или получить картинку превью по ссылке, выше лежат все файлы, которые YouTube отдаёт для этого видео. Мы их не пережимаем и не редактируем: вы получаете оригинал с
+						серверов i.ytimg.com.
+					</p>
+				</section>
+				<section>
+					<h2>Что вы скачиваете, знаете только вы</h2>
+					<ul>
+						<li>Ссылку из поля ввода обрабатывает ваш браузер. У сайта нет своего сервера, это статичные страницы, поэтому он физически не получает ваши ссылки.</li>
+						<li>Мы не ведём журнал скачиваний и не знаем, какие ролики вы открывали и что сохранили.</li>
+						<li>История обложек хранится только на вашем устройстве и стирается одной кнопкой.</li>
+						<li>Ни регистрации, ни паролей, ни почты. Как и любой сайт, хостинг видит обычные технические запросы к страницам, но не содержимое поля ввода.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Авторские права на обложки</h2>
+					<p>
+						Обложка принадлежит автору канала. Сохранить её для личных нужд, обзора, цитаты или как референс — обычная практика, а выдавать за свою или ставить в рекламу без разрешения нельзя. Позицию YouTube читайте в
+						<a href="https://www.youtube.com/howyoutubeworks/copyright/" target="_blank" rel="noopener">разделе об авторском праве</a> и в
+						<a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">условиях использования сервиса</a>. Адреса изображений публичные: YouTube сам отдаёт их любому браузеру, а мы только собираем их в одном
+						списке.
+					</p>
+				</section>
+				<section>
+					<h2>Частые вопросы</h2>
+					<details>
+						<summary>Как скачать превью видео с YouTube в максимальном качестве?</summary>
+						<p>Выберите вариант 1280×720 (maxresdefault). Если он помечен как недоступный, у автора загружена картинка меньшего размера — берите 640×480 или 480×360.</p>
+					</details>
+					<details>
+						<summary>Бесплатно ли это и нужна ли регистрация?</summary>
+						<p>Да, сервис бесплатный, регистрация и установка программ не нужны.</p>
+					</details>
+					<details>
+						<summary>YouTube заблокирован, картинка не показывается. Что делать?</summary>
+						<p>Нажмите «Скачать» — браузер откроет прямую ссылку. Также можно скопировать её кнопкой «Ссылка» и открыть через VPN или другое устройство.</p>
+					</details>
+					<details>
+						<summary>Работает ли на телефоне?</summary>
+						<p>Да, дизайн адаптивный. На iPhone и Android файл можно сохранить долгим нажатием на картинку.</p>
+					</details>
+					<details>
+						<summary>Можно ли скачать обложку Shorts?</summary>
+						<p>Да, вставьте ссылку вида youtube.com/shorts/ID.</p>
+					</details>
+					<details>
+						<summary>Видит ли сервис, какие обложки я скачиваю?</summary>
+						<p>Нет. Ссылку обрабатывает ваш браузер, на наш сервер она не отправляется, а журнала скачиваний у сайта нет.</p>
+					</details>
+					<details>
+						<summary>Где хранится история и как её удалить?</summary>
+						<p>Только в вашем браузере. Нажмите «Очистить историю» под списком или удалите данные сайта в настройках браузера.</p>
+					</details>
+				</section>
+				<div class="box">
+					<h2>Кто делает сервис и как он проверяется</h2>
+					<p>YT Preview ведёт <b>Имя автора</b>, веб-разработчик (укажите свой опыт и профиль). Сайт задуман как простой инструмент без рекламы и лишних шагов.</p>
+					<p>
+						<b>Как проверяем:</b> перед каждым обновлением прогоняем обычные ролики, Shorts, трансляции и старые видео, у которых нет версии maxres, и смотрим, что реально отдаёт YouTube. <b>Источник данных:</b> только публичные
+						адреса i.ytimg.com. Нашли неточность или сломанную ссылку — напишите через раздел «Контакты» внизу страницы. Последнее обновление: 8 ноября 2026.
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="w">
+				<a href="/contacts/">Контакты</a><a href="/privacy/">Политика конфиденциальности</a>
+				<p>© 2026 YT Preview. Сервис не связан с YouTube и Google. YouTube — товарный знак Google LLC.</p>
+			</div>
+		</footer>
+		<script src="app.js" defer></script>
+	</body>
+</html>
